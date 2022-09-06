@@ -24,7 +24,7 @@ public class UsuarServiceImpl implements UserService{
 	@Override
 	public Usuario saveUsuario(Usuario usuario) {
 		String encodedPassword = this.passwordEncoder.encode(usuario.getPassword());
-		usuario.setPassword(encodedPassword);
+		usuario.setContrasena(encodedPassword);
 		return userRepository.save(usuario);
 	}
 

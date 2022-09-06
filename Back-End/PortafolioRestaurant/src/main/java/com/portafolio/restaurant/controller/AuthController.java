@@ -38,7 +38,7 @@ public class AuthController {
                 );
 
             Usuario user = (Usuario) authenticate.getPrincipal();
-            user.setPassword(null);
+            user.setContrasena(null);
             return ResponseEntity.ok()
                 .header(
                     HttpHeaders.AUTHORIZATION,

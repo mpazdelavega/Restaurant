@@ -6,8 +6,11 @@ const Register = () => {
   // const [password, setPassword]=useState("");
 
   const [usuario, setUsuario] = useState({
+    nombre: "",
+    apellido: "",
     username: "",
     password: "",
+    id_tipo_usuario: 4,
   });
 
   // const [errors, setErrors] = useState("");
@@ -89,8 +92,36 @@ const Register = () => {
             <div className="relative">
               <input
                 type="text"
+                name="nombre"
+                value={usuario.nombre}
+                onChange={(e) => handleChange(e)}
                 className="w-full border py-2 px-10 rounded-md outline-none"
                 placeholder="Ingresa tu nombre"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5 absolute left-2 top-[50%] -translate-y-[50%] text-amber-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+            </div>
+
+            <div className="relative">
+              <input
+                type="text"
+                name="apellido"
+                value={usuario.apellido}
+                onChange={(e) => handleChange(e)}
+                className="w-full border py-2 px-10 rounded-md outline-none"
+                placeholder="Ingresa tu apellido"
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.portafolio.restaurant.entity.Usuario;
 
 @Repository
-public interface UserRepository extends JpaRepository<Usuario, Long>{
+public interface UserRepository extends JpaRepository<Usuario, Integer>{
 
 	Optional<Usuario> findByUsername(String username);
 	
