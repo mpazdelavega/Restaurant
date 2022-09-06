@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
+import NavBar from './components/NavBar';
 import Login from './components/Login';
-import Menu from './components/Menu';
 import PrivateRoute from './components/PrivateRoute';
 import Register from './components/Register';
+import Home from './components/Home';
 
 function App() {
 
@@ -21,14 +21,15 @@ function App() {
     <Routes>
       <Route path='/menu' element={
         <PrivateRoute>
-          <Menu />
+          <><NavBar/><Home/></>
         </PrivateRoute>
       } />
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/' element={<Login />} />
-      <Route path='/home' element={<Home />} />
+      {/* <Route exact path='/home' element={<><NavBar/><Home/></>} /> */}
     </Routes>
+    
 
     
     

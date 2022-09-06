@@ -7,7 +7,7 @@ const Login = () => {
 
   const [jwt, setJwt] = useLocalState("", "jwt");
 
-  console.log(username);
+  //console.log(username);
   function sendLoginRequest() {
     const reqBody = {
       username: username,
@@ -71,7 +71,6 @@ const Login = () => {
                 />
               </svg>
             </div>
-            <p className='text-red-600 text-xs italic'></p>
             <div className="relative">
               <input
                 type="password"
