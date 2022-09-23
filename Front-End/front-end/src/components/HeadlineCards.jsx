@@ -7,9 +7,9 @@ const HeadlineCards = () => {
       <div className='rounded-xl relative'>
         {/* Overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-          <p className='font-bold text-2xl px-2 pt-4'>Sun's Out, BOGO's Out</p>
-          <p className='px-2'>Through 8/26</p>
-          <button className='border-white border-2 rounded-full bg-white text-black mx-2 absolute bottom-4 py-1 w-28 hover:bg-amber-600 hover:text-white transition-colors'>Order Now</button>
+          <p className='font-bold text-2xl px-2 pt-4'>Los mejores platos del siglo</p>
+          <p className='px-2'>Ordena el tuyo ahora</p>
+          <button className='border-white border-2 rounded-full bg-white text-black mx-2 absolute bottom-4 py-1 w-28 hover:bg-amber-600 hover:text-white transition-colors'>ordenar ahora</button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -21,9 +21,9 @@ const HeadlineCards = () => {
       <div className='rounded-xl relative'>
         {/* Overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-          <p className='font-bold text-2xl px-2 pt-4'>New Restaurants</p>
-          <p className='px-2'>Added Daily</p>
-          <button className='border-white border-2 rounded-full bg-white text-black mx-2 absolute bottom-4 py-1 w-28 hover:bg-amber-600 hover:text-white transition-colors'>Order Now</button>
+          <p className='font-bold text-2xl px-2 pt-4'>Nuevas comidas</p>
+          <p className='px-2'>Se cambian diariamente</p>
+          <button className='border-white border-2 rounded-full bg-white text-black mx-2 absolute bottom-4 py-1 w-28 hover:bg-amber-600 hover:text-white transition-colors'>ordenar ahora</button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -35,9 +35,9 @@ const HeadlineCards = () => {
       <div className='rounded-xl relative'>
         {/* Overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-          <p className='font-bold text-2xl px-2 pt-4'>We Deliver Desserts Too</p>
-          <p className='px-2'>Tasty Treats</p>
-          <button className='border-white border-2 rounded-full bg-white text-black mx-2 absolute bottom-4 py-1 w-28 hover:bg-amber-600 hover:text-white transition-colors'>Order Now</button>
+          <p className='font-bold text-2xl px-2 pt-4'>Los mejores postres del siglo</p>
+          <p className='px-2'>Ordena el tuyo ahora</p>
+          <button className='border-white border-2 rounded-full bg-white text-black mx-2 absolute bottom-4 py-1 w-28 hover:bg-amber-600 hover:text-white transition-colors'>ordenar ahora</button>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
