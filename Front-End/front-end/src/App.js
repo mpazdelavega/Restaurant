@@ -11,6 +11,8 @@ import Hero from './components/Hero';
 import HeadlineCards from './components/HeadlineCards';
 import Food from './components/Food';
 import Category from './components/Category';
+import Mesa from './components/Mesa';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -32,7 +34,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/' element={<Login />} />
-      <Route path='/prueba' element={<><Navbar2/><Hero/><HeadlineCards/><Food/><Category/></>} />
+      <Route path='/prueba' element={<><Navbar2/><Hero/><HeadlineCards/><Food/><Category/><Mesa/><Footer/></>} />
       {/* <Route exact path='/home' element={<><NavBar/><Home/></>} /> */}
     </Routes>
     
