@@ -59,7 +59,7 @@ public class SecurityConfig{
 	    }).and();
 	    
 	    http.authorizeRequests()
-	    .antMatchers("/usuario/add/**","/api/auth/**","/plato/getAll/**","/mesa/getAll/**").permitAll()
+	    .antMatchers("/usuario/add/**","/api/auth/**","/plato/getAll/**","/mesa/getAll/**","/tipomesa/getAll/**").permitAll()
 	    .anyRequest().authenticated();
 	    
 	    http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);

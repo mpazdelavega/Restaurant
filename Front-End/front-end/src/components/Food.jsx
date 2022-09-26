@@ -20,23 +20,23 @@ const Food = () => {
       </h1>
       {/* Display foods */}
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
-        {platos.map((item, index) => (
+        {platos.map((plato, index) => (
           <div
             key={index}
             className='border shadow-lg rounded-lg hover:scale-105 duration-300'
           >
             <img
-              src={item.foto}
-              alt={item.nombre}
+              src={plato.foto}
+              alt={plato.nombre}
               className='w-full h-[200px] object-cover rounded-t-lg'
             />
             <div className='flex justify-between px-2 py-4'>
-              <p className='font-bold'>{item.nombre}</p>
+              <p className='font-bold'>{plato.nombre}</p>
               <p>
                 <span className='bg-amber-600 text-white p-2 mr-2 rounded-full'>
-                  ${item.precio}
+                  ${plato.precio}
                 </span>
-                <button className='bg-amber-600 text-white p-1.5 rounded-full'>
+                <button className='bg-amber-600 hover:bg-amber-900 transition-colors text-white p-1.5 rounded-full'>
                     Agregar
                 </button>
               </p>

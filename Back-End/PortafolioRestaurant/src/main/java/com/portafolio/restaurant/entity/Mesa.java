@@ -1,8 +1,9 @@
 package com.portafolio.restaurant.entity;
 
+
 import java.util.List;
 
-import javax.persistence.CascadeType;
+//import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,8 +19,10 @@ public class Mesa {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id_mesa;
 	private int capacidad;
+	private String estado;
+	private String foto;
 	
-	@OneToMany(targetEntity = Tipo_mesa.class, cascade = CascadeType.ALL)
+	@OneToMany(targetEntity = Tipo_mesa.class)
 	@JoinColumn(name = "id_tipo_mesa", referencedColumnName = "id_mesa")
 	private List<Tipo_mesa> tipo_mesa;
 	
@@ -39,6 +42,7 @@ public class Mesa {
 	public void setCapacidad(int capacidad) {
 		this.capacidad = capacidad;
 	}
+	
 
 	public List<Tipo_mesa> getTipo_mesa() {
 		return tipo_mesa;
@@ -47,6 +51,26 @@ public class Mesa {
 	public void setTipo_mesa(List<Tipo_mesa> tipo_mesa) {
 		this.tipo_mesa = tipo_mesa;
 	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+	
+	
+	
+	
 
 	
 	
